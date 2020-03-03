@@ -1,33 +1,13 @@
-var buttonRock = document.getElementById('button-rock'),
+var buttonRock, buttonPaper, buttonScissors, argButtonName;
+
+buttonRock = document.getElementById('button-rock'),
 buttonPaper = document.getElementById('button-paper'),
 buttonScissors = document.getElementById('button-scissors');
 
 function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
-  
-  var computerMove, randomNumber;
-randomNumber = Math.floor(Math.random() * 3 + 1);
-console.log('wylosowana liczba to: ' + randomNumber);
-if (randomNumber == '1') {
-  computerMove = 'kamień';
-} else if (randomNumber == '2') {
-  computerMove = 'papier';
-} else if (randomNumber == '3') {
-  computerMove = 'nożyce';
 }
-
-var playerMove, playerInput;
-playerMove = argButtonName;
-if (playerInput == '1') {
-  playerMove = 'kamień';
-} else if (playerInput == '2') {
-  playerMove = 'papier';
-} else if (playerInput == '3') {
-  playerMove = 'nożyce'; 
-printMessage('Twój ruch: ' + playerMove);
-console.log('moj ruch to: ' + argButtonName);
-
 
 function getMoveName(argMoveId) {
   console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
