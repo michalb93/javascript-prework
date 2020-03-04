@@ -18,7 +18,7 @@ function buttonClicked(argButtonName) {
 
 function getMoveName(argMoveId) {
 		 console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
-if 		(argMoveId == 1) {
+		 if 		(argMoveId == 1) {
 		 return 'kamien';
 		 } else if (argMoveId == 2) {
 		 return 'papier';
@@ -33,7 +33,7 @@ if 		(argMoveId == 1) {
 
 function displayResult(argPlayerMove, argComputerMove) {
 		 console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
-if 		(argPlayerMove == 'papier' && argComputerMove == 'kamien') {
+		 if 		(argPlayerMove == 'papier' && argComputerMove == 'kamien') {
 		 printMessage('Wygrywasz!');
 		 } else if (argPlayerMove == 'kamien' && argComputerMove == 'nozyce') {
 		 printMessage('Wygrywasz!');
@@ -43,9 +43,9 @@ if 		(argPlayerMove == 'papier' && argComputerMove == 'kamien') {
 		 printMessage('Remis');
 		 } else {
 		 printMessage('Przegrywasz :(');
-	}
+		}
 		 printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
-	}
+		}
 
 
 		 buttonKamien.addEventListener('click', function(){ buttonClicked('kamien'); });
